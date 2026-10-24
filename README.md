@@ -11,15 +11,14 @@ The analyses examine protein detection and overlap, consistency across repeat sa
 | `code/Figure_2.R`–`code/Figure_6.R` | Figure-specific analyses, summary tables, and plots |
 | `code/setup.R` | Common paths and package loading |
 | `code/functions.R`, `code/pdf_text_utils.R` | Shared analysis and figure-export helpers |
-| `data/processed/` | Local processed assay inputs |
-| `data/reference/` | Local reference annotations used by the analyses |
-| `result/`, `plot/` | Generated analysis objects and figures |
+| `data/processed/` | Directory reserved for processed assay inputs |
+| `result/`, `plot/` | Directories reserved for generated analysis objects and figures |
 
 ## Working with the code
 
 Run the figure scripts from the repository root in an R environment with the packages listed in `code/setup.R` and the additional packages loaded by individual figure scripts. `Figure_2.R` prepares detection summaries read by later scripts, so run it first when generating the figure outputs.
 
-The supplied `.gitignore` keeps assay data, processed inputs, reference files, and generated results out of version control. The scripts use local input paths under `data/` and write outputs to `result/` and `plot/`.
+The scripts use local input paths under `data/` and write outputs to `result/` and `plot/`.
 
 ## Study information
 
